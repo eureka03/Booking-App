@@ -12,16 +12,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home:Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.amberAccent,
-          title:Center(
+          backgroundColor: const Color.fromARGB(255, 232, 183, 47),
+          body:Center(
             child: Text('BOOKINGEU' ,
-           textAlign:TextAlign.center,
-           style:TextStyle(fontWeight:FontWeight.bold)
-           
-           ),
+                textAlign:TextAlign.center,
+                style:TextStyle(fontWeight:FontWeight.bold,fontSize:40)
+            ),
           ),
-        ),
+        
       ),
       
     );
