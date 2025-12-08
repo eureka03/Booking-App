@@ -11,7 +11,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
+      home:Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.amberAccent,
+          title:Center(
+            child: Text('BOOKINGEU' ,
+           textAlign:TextAlign.center,
+           style:TextStyle(fontWeight:FontWeight.bold)
+           
+           ),
+          ),
+        ),
+      ),
       
     );
   }
