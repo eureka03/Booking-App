@@ -14,15 +14,47 @@ class MyApp extends StatelessWidget {
       home:Scaffold(
           backgroundColor: const Color.fromARGB(255, 232, 183, 47),
           body:Center(
-            child: Text('BOOKINGEU' ,
-                textAlign:TextAlign.center,
-                style:TextStyle(fontWeight:FontWeight.bold,fontSize:40)
-            ),
+            child:Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('BOOKING.EU' ,
+                  textAlign:TextAlign.center,
+                  style:TextStyle(fontWeight:FontWeight.bold,fontSize:40)
+                ),
+                SizedBox(
+                  width:200,
+                  child:ElevatedButton(
+                    onPressed: (){},
+                    style:ElevatedButton.styleFrom(
+                      shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                    ),
+                    child:Text('Login')
+                  ),
+                ),
+                SizedBox(
+                  width:200,
+                  
+                  child:ElevatedButton(
+                    onPressed:() {},
+                    style:ElevatedButton.styleFrom(
+                    backgroundColor: Colors.teal,
+                    shape:RoundedRectangleBorder(
+                      borderRadius:BorderRadius.circular(10),
+                    ),
+                  ),
+                    child:Text('Sign Up',style: TextStyle(color:Colors.white))
+
+                  )
+                ),
+               
+              ],
+          ),
           ),
         
-      ),
-      
+          ),
     );
+      
+      
   }
 }
 
